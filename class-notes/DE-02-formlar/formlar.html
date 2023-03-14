@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formlar</h1>
+    <form action="result.html">
+      <!-- text -->
+      <div>
+        <!-- label ve inputu id for ile bağlayınca label ı tıkla input aktif olsun -->
+        <label for="ad">AD:</label>
+
+        <input
+          id="ad"
+          type="text"
+          name="isim"
+          value=""
+          placeholder="Lütfen isim giriniz"
+          required
+        />
+        <!-- required:doldurulması zorunlu -->
+        <br />
+        <br />
+        <label for="Soyad">Soyad:</label>
+        <input
+          id="Soyad"
+          type="text"
+          name="soyisim"
+          value=""
+          placeholder="Lütfen soyisim giriniz"
+          required
+        />
+      </div>
+      <br>
+      <!-- password -->
+<div>
+    <label for="pass">Password</label>:</label>
+        <input
+          id="pass"
+          type="password"
+          name="password"
+          value=""
+          placeholder="Lütfen password giriniz"
+          minlength="4"
+          maxlength="8"
+          required
+        />
+</div> <br>
+
+<!-- radio button -->
+<div>
+    <label for="man">Erkek</label>
+    <input id="man" name="cinsiyet" value="erkek" type="radio">
+    
+    <label for="woman">Kadin</label>
+    <input id="women" name="cinsiyet" value="kadin" type="radio">
+
+    <label for="none">None</label>
+    <input id="none" name="cinsiyet" value="none" type="radio"
+    checked>
+<!-- radio= tek biri check edilebilir. checked= ilk render da tikli gelsin -->
+
+</div>
+<br>
+<!-- checkbox -->
+<div>
+    <label>LUTFEN FOVORI ARABANIZI SECINIZ</label> <br>
+<label for="bmw">BMW</label>
+<input id="bmw" type="checkbox" name="araba1" value="bmw-m5">
+
+<label for="mer">MERCEDES</label>
+<input id="mer" type="checkbox" name="araba2" value="MERCEDES">
+
+<label for="audi">AUDI</label>
+<input id="audi" type="checkbox" name="araba3" value="audi-rs6">
+<!-- checkbox=istediginiz kadar isaretleyebilirsiniz -->
+</div>
+<br>
+<div>
+    <input type="submit" value="Gonder">
+    <!-- <input type="reset">
+    <input type="text"> -->
+</div>
+    </form>
+  </body>
+</html>
