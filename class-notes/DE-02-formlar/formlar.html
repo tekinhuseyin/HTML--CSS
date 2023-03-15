@@ -80,8 +80,104 @@
 <!-- checkbox=istediginiz kadar isaretleyebilirsiniz -->
 </div>
 <br>
+
+<br>
+<!-- NUMBER -->
+  <div>
+    <label for="age">YAS</label>
+    <input id="age" type="number" name="yas" value="0" max="100" step="">
+    <!-- max gidebilecegi son sayi, step de kacar kacar artmali onu gösteriyor -->
+  </div>
+  <br>
+  <!-- COLOR -->
+<div>
+    <label for="color">RENK</label>
+    <input id="color" type="color" name="renk">
+</div>
+<br>
+<!-- Date -->
+<div>
+<label for="Tarih">TARIH</label>
+<input id="Tarih" type="date" min="2000-10-01" max="2023-10-01" name="Tarih">
+</div>
+<br>
+
+<!-- DATETIME -->
+
+<div>
+    <label for="tarih2">TARIH</label>
+    <input id="tarih2" type="datetime-local" name="tarih2" min="2000-10-1" max="2023-10-1">
+    <br>
+    <!-- yil-ay-gün -->
+</div>
+<br>
+
+<!-- EMAIL -->
+
+<div>
+<label for="EMAIL">Email</label>
+<input type="text" name="Email" placeholder="example@gmail.com">
+
+</div>
+<br>
+
+<!-- TEL -->
+
+<div>
+  <label for="">TELEFON</label>
+  <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+  placeholder="555-555-55-55" maxlength="14">
+</div>
+<br>
+
+<!-- SELECT OPTGROUP -->
+
+<div>
+  <label for="Tatli">Hangi tatliyi seversiniz</label>
+  <select name="Tatli" id="Tatli">
+  <optgroup label="Serbetli Tatlilar">
+    <option value="">Künefe</option>
+    <option value="">Baklava</option>
+    <option value="">Sarma</option>
+    <option value="">Kadayif</option>
+  </optgroup>
+
+    <optgroup label="Sütlü tatlilar" >
+    <option value="">Muhallebi</option>
+    <option value="">Kazandibi</option>
+  </optgroup>
+</select>
+</div>
+<br>
+
+<!-- DATALIST -->
+<div>
+<label for="Marka">Sevdiginiz marka</label>
+<input id="Marka" list="markalar">
+
+<!-- input list ile datalist in id si aynı olmalı ki liste çıksın -->
+
+<datalist id="markalar">
+  <option value="Vakko"></option>
+  <option value="Beymen"></option>
+  <option value="Guess"></option>
+  <option value="Locoste"></option>
+</datalist>
+</div>
+
+ <!-- datalist vs select ==>bir gereklilik ile bir öneri arasındaki fark olarak düşünün.  select, kullanıcının vermiş olduğunuz seçeneklerden birini seçmesi gerekir.  datalist, kullanıcının verdiğiniz seçeneklerden birini seçmesi önerilir, ancak aslında girdiye istediği her şeyi girebilir. -->
+
+<br>
+<!-- TEXTAREA -->
+<div>
+  <label for="yorum">Yorumlarinizi giriniz</label>
+  <textarea name="yorum" id="yorum" cols="10" rows="10" style="resize:none;" maxlength="100"></textarea>
+</div>
+<br>
 <div>
     <input type="submit" value="Gonder">
+    <input type="Reset">
+    <input type="button" value="Kaydet">
     <!-- <input type="reset">
     <input type="text"> -->
 </div>
