@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sehir</title>
+  </head>
+  <body>
+    <h2>Photo Mapping</h2>
+    <p>
+      Click on the cities of <strong>Antalya</strong> <strong>Izmir</strong> and
+      <strong>Istanbul</strong> and get information about them.
+    </p>
+    <img
+      src="harita.png"
+      alt="Türkiye haritasi"
+      width="80%"
+      usemap="#turkeymap"
+    />
+    <map name="turkeymap">
+      <area
+        shape="circle"
+        coords="225,230,10"
+        href="antalya.html"
+        target="_blank"
+        alt="antalya hakkinda"
+      />
+      <!--! ekranın solundan 225 px üstten 230 px, yarıçapı 10 olan bir daireye denk gelmeli Antalya -->
+      <area
+        shape="circle"
+        coords="140,185,10"
+        href="izmir.html"
+        target="_blank"
+        alt="Izmir"
+      />
+      <area
+        shape="circle"
+        coords="175,105,10"
+        href="istanbul.html"
+        target="_blank"
+        alt="istanbul"
+      />
+    </map>
+  </body>
+</html>

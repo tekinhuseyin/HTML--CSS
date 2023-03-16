@@ -1,0 +1,70 @@
+*{
+ font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color: hsl(17, 74%, 57%);
+
+
+ /* hue:renk tonu, saturation:rengin yoğunluğu belirginliği, lightness:hafiflik ışık */
+
+color: rgb(135, 206, 250);
+
+ /* r: red, g:green, b:blue. isteğe bağlı a :alpha=saydamlık kullanılabilir */
+ /* color: #f63232;  */
+ /* red yerine üstteki hex kodunu kullanabiliriz */
+
+text-decoration: line-through;
+text-decoration: underline;
+text-decoration: overline;
+
+/* line-through=yazının üstünü çizmek,underline=altını, overline=üst tarafina cizgi ceker */
+
+text-decoration-style: dashed;
+text-decoration-style: dotted;
+text-decoration-style: double;
+text-decoration-style: wavy;
+
+text-decoration-color: mediumorchid ;
+
+text-decoration: midnightblue underline overline 5px wavy;
+text-align: center;
+
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+
+word-spacing: 50px;
+/* iki kelime arasi bosluk */
+
+letter-spacing: 5px;
+/* harfler arasi bosluk */
+}
+
+p{
+    text-indent: 20px;
+    /* paragraf basi bosluk */
+    line-height: 30px;
+}
+
+li{
+    background-color: rgb(243, 209, 15);
+}
+
+ul{
+    list-style-position: inside;
+
+    /* ul nin noktalarini iceri iter */
+
+
+    /* image ile yaparsak type ile yapilana gore daha baskin olur */
+    list-style-image: url(../assets/img/arrow-right-long-solid.svg);
+    
+    list-style-type: "🍒";
+    list-style-type: disc;
+}
+h3{
+    text-align: right;
+
+    direction: rtl;
+}
+

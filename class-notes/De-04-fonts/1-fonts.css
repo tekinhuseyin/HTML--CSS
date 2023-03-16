@@ -1,0 +1,21 @@
+/* istersek css de tesekkur de edebiliriz */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Alkalami:regular);
+
+.birinci{
+    font-family: 'Lobster', cursive;
+    background-color: darksalmon;
+}
+.menu{
+    font-size: 40px;
+    width: 250px;
+    text-align: center;
+}
+.aktif{
+    background-color: darkseagreen;
+    font-family: "Alkalami";
+}
+div{
+    background-color: lightgoldenrodyellow;
+}
