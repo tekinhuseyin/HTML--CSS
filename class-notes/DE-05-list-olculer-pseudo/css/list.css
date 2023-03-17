@@ -1,36 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-*{
+* {
     font-family: 'Righteous', cursive;
 }
 
-.aktif{
+.aktif {
     background-color: lightseagreen;
 }
 
 
-li{
+li {
     background-color: lightgrey;
 }
 
 /* li lere verilen color dan a etkilenmez a ozel ilgi ister */
-ul{
+ul {
     list-style-position: inside;
     list-style-type: "🍎";
 }
-a{
+
+a {
     color: navy;
     font-size: 25px;
     text-decoration: none;
 }
 
 /* li lerirn uzerine maus ile gelindigi zaman  */
-li:hover{
-background-color: palevioletred;
-font-size:30px;
-/* color: purple; */
+li:hover {
+    background-color: palevioletred;
+    font-size: 30px;
+    /* color: purple; */
 }
 
-a:hover{
+a:hover {
     color: violet;
 }

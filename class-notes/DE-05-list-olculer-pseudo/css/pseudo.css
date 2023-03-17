@@ -1,0 +1,88 @@
+table{
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+}
+
+tr:nth-child(odd){
+
+    background-color: cadetblue;
+    color: cornsilk;
+}
+
+tr:nth-child(3){
+    background-color: darksalmon;
+}
+
+td:first-child{
+
+    color: slateblue;
+    /* no sutunu */
+    font-weight: 900;
+}
+td:last-child{
+    font-style: italic;
+    font-size: 50px;
+}
+
+tr::before, tr::after{
+    font-family:"Font Awesome 5 Free" ;
+    font-weight: 900;
+    content: "😎";
+    content: "\1F606";
+    color: rgb(41, 203, 231);
+    font-size: 30px;
+
+/* content kısmına emoji yapıştırabiliriz ama bazı emojiler stil kabul etmiyor,  https://symbl.cc/en/collections/top-emoji/ adresinden emojinin css kod unu alıp gelebiliriz */
+}
+
+tr:nth-child(3)::after, tr:nth-child(3)::before{
+    font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "🌵";
+        /* content: "\1F606"; */
+        color: red;
+
+}
+
+td:hover{
+    background-color: violet;
+    color: tomato;
+}
+tr:hover{
+background-color: rgb(218, 49, 49);
+color: steelblue;
+}
+
+/* td lere verilen stilleri tr:hover ile ezemezsiniz, ama tr lere verilen stilleri td:hover ile ezebilirsiniz */
+
+button{
+    cursor: pointer;
+    height: 100px;
+}
+
+.fa-solid{
+    font-size: 40px;
+}
+.icon{
+    color: teal;
+    vertical-align: middle;
+}
+
+a{
+    color: red;
+}
+
+/* daha onceden ziyaret edilmis oldugunu gosterir */
+a:visited{
+    color: salmon;
+}
+
+/* maus ile uzerine bastigim zaman degisir */
+a:active{
+    color: skyblue;
+}
+a:hover{
+    font-size: 50px;
+    background-color: salmon;
+}

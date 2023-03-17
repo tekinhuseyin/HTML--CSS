@@ -1,0 +1,54 @@
+/* *{margin:0} */
+
+*{
+    font-size: 30px;
+}
+
+.dede{
+    background-color: salmon;
+    width: 50%;
+}
+.baba{
+    background-color: sandybrown;
+    width: 50%;
+}
+.torun{
+    background-color: silver;
+    /* width: 50%; */
+    width: 50vw;
+}
+/* viewport ölçüleri tüm ekranı baz alır, mesela 50vw dersek tüm 1400px lik pc ekranımı baz alır ve 700 px olur. 50% ise body nin 16px lik default margin lerinden arta kalan kısmın yüzde 50 sini alır bu yüzden % ler parent ı önemser, her zaman parent tan gelen ölçünün yüzdesini alır ama viewportlar her durumda ekranın yüzdesini alır */
+
+.tek {
+    font-size: 4.5em;
+    /* 16*4.5=72px */
+    /* 1 em = 16px
+    0.5 em = 8px (16/2) */
+}
+
+.anane {
+    font-size: 3em;
+    color: red;
+    /* 3em=3*16=48px */
+}
+
+.anne {
+    font-size: 0.5em;
+    /* 48/2=24px */
+}
+.cocuk{
+    font-size: 3em;
+    /* 3*24=72px */
+}
+
+/* rem icin parent child yok ana element e gore default 16px alir. 1rem=16px */
+
+.div1{
+    font-size: 2rem;
+}
+.div2{
+    font-size: 2rem;
+}
+
+/* 1 rem 16pxdir ama bodydeki default olan(16px) pixeli degisirsek o zaman bodydekini baz alir. mesela bady 30px ise 1 rem artik 30 px olmustur. */
+
