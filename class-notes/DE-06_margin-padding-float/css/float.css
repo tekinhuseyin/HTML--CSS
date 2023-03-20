@@ -1,0 +1,37 @@
+img {
+    width: 50%;
+}
+
+.img1 {
+    float: right;
+}
+
+
+.temizle {
+    clear: both;
+}
+
+.box {
+    height: 2rem;
+    float:left;
+}
+
+.box1 {
+    background-color: rgb(199, 45, 199);
+    width:20%;
+    /* clear:right; */
+    /* float:right */
+}
+
+.box2 {
+    background-color: orange;
+    /* float:right; */
+    width:30%;
+    /* clear: both; */
+}
+
+.box3 {
+    background-color: aqua;
+    width:40%;
+    /* clear: both; */
+}
