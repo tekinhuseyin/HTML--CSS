@@ -1,0 +1,56 @@
+/*! YATAY-MENU */
+
+.yatay-menu ul {
+    list-style-type: none;
+}
+
+.yatay-menu ul li {
+    background-color: bisque;
+    width: 8rem;
+    height: 5rem;
+    margin: 0.5rem;
+    display: inline-block;
+    /** li block olduğu için normalde alt altalar. yanyana dizilsin ama width height margin almaya da devam etsin istiyorsak display:inline-block; */
+
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    background-color: red;
+    display: inline-block;
+    /* a etiketlerine width ve normal padding verebilmek için block gibi davran dedik */
+    padding: 1rem;
+    width: 6rem;
+    /** sağ sol 1 padding ve 6rem width ile parent ı gibi 8rem eder */
+}
+
+a:hover {
+    background-color: aquamarine;
+
+}
+
+a:active {
+    color: white;
+}
+
+/*! ACILIR-MENU */
+
+.ul1 {
+    background-color: yellow;
+    display: none;
+
+}
+
+.acilir-menu:hover .ul1 {
+    display: block;
+
+}
+
+/* .acilir-menu:hover{
+    background-color:green;
+} */
+
+/* .ul1 .bir:hover{
+    background-color:pink;
+}  */
