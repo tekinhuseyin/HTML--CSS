@@ -18,7 +18,6 @@
     color: blue;
 }
 
-
 /*! h1 elementinden sonraki tüm p kardeş elementlerini seçer ama üstteki gibi spesific bir stil varsa (.kutu)  alttaki selector ile bunu ezmek istersem bunlara da .kutu eklemeliyim*/
 /** general sibling selector */
 
