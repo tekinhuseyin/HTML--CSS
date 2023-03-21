@@ -1,0 +1,53 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+
+.olcusuz-box {
+    background-color: orange;
+    ;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+
+    /* belli bir width olmadığı için alttaki kod geçersiz */
+    box-sizing: border-box;
+
+}
+
+.olcusuz-content {
+    background-color: yellow;
+    ;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+}
+
+/* box-sizing komutu alttaki gibi width height verirsek işlevselleşir */
+.box {
+    background-color: lightgreen;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: lightgreen;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+    width: 300px;
+    height: 300px;
+
+
+    /* width verirsek  defaultta nasıl davranıyorsa alttaki kodda aynıdır, yazmaya gerek yok */
+    /* box-sizing: content-box; */
+}

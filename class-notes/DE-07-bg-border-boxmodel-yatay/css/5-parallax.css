@@ -1,0 +1,17 @@
+.bg {
+    height: 70vh;
+
+    background-size: cover;
+    background-position: center center;
+    /* parallax efectini alttaki kod verir */
+    background-attachment: fixed;
+}
+
+.div1{
+    background-image: url("../../assets/blackbird-g9bc79d233_1280.jpg")
+
+}
+
+.div2 {
+    background-image: url("../../assets/poppies-g9b0e8deb5_1280.jpg");
+}

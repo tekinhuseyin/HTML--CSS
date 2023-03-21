@@ -1,0 +1,47 @@
+* {
+    text-align: center;
+    /* color:cyan; */
+    margin: 0;
+}
+
+.bg {
+
+    background-image: url("../../assets/blackbird-g9bc79d233_1280.jpg");
+    height: 30rem;
+
+    /* background-size: 400px 300px; */
+    /* üstteki gibi verirsek resmin formu bozulabilir */
+
+    background-repeat: no-repeat;
+
+    /* tek bir tane resim yerleştir (boyutu cover değilde mesela 20px 20px verince bir sürü resim sığabilir, no-repeat dersek küçük 1 tane resim görünür). cover yazınca repeat komutu önemini yitiriyor. contain yazarsak hala gerekli */
+    background-size: cover;
+    /* ekran büyükken ekranı tamamen sar, kapla,gerekirse resmi kırp */
+    /* Taşıyıcının tamamını kaplayacak şekilde resmi büyütür, gerekirse resmi kırpar */
+    background-size: contain;
+
+    background-position: bottom center;
+    background-position: top right;
+    background-position: center center;
+
+    /* ilk parametre dikeyde (top-bottom-center), 2. parametre yatayda (right-left-center) hizalar. 
+ resim cover ile kırpıldıysa, resmin gözükmesini istediğimiz kısmını bu komutlarla belirleyebiliriz. resim contain ile verilen alanda küçük bi yer kapladıysa bu komutlarla hizalama yapabiliriz */
+}
+
+span {
+    background-color: gray;
+    width: 4rem;
+    height: 1rem;
+    display: inline-block;
+    margin: 1rem;
+}
+
+span:hover {
+    background-color: lightgray;
+}
+
+/* .bb{
+ background-color: gray;
+    width:4rem;
+    height:1rem;  
+} */

@@ -1,0 +1,91 @@
+/* dotted- Noktalı bir kenarlık tanımlar
+dashed- Kesikli bir kenarlık tanımlar
+solid- Tek, düz, düz bir çizgi görüntüler.
+double- Çift kenarlık tanımlar
+groove- Oyulmuş bir görünüme sahip bir kenarlık görüntüler. ridge nin tam tersidir
+ridge- Dışa itilmiş görünüme sahip bir kenarlık görüntüler
+inset- Öğenin gömülü görünmesini sağlayan bir kenarlık görüntüler.outset in tam tersidir 
+outset- Öğenin kabartmalı görünmesini sağlayan bir kenarlık görüntüler.
+none- Sınır tanımlamaz
+hidden- Gizli bir sınır tanımlar */
+body {
+    background-image: url("../img/box-sizing\ \(1\).png");
+}
+
+.container {
+    margin: 1rem;
+}
+
+
+
+
+.msg {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.msg1 {
+    border: 3px solid red;
+    /* padding:1rem; */
+}
+
+.msg2 {
+    border: 3px dashed blue;
+}
+
+.msg3 {
+    border-right: 3px dotted red;
+    border-left: 3px solid blue;
+}
+
+.msg4 {
+    border: 9px outset red;
+}
+
+.msg5 {
+    border: 9px inset red;
+    padding: 1rem;
+    background-color: orange;
+    border-radius: 5px;
+    border-radius: 50px 0 3px 0;
+    border-radius: 50px 0;
+}
+
+.msg6 {
+    border: 5px groove salmon;
+    /* background-color: hsla(114, 63%, 51%, 0.5); */
+
+    outline: 15px groove cyan;
+    outline-offset: 50px;
+}
+
+.msg7 {
+    border: 15px ridge salmon;
+    border-radius: 30%;
+}
+
+.msg8 {
+    border: 3px solid rgba(128, 128, 128);
+    background-color: rgb(223, 71, 223);
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+
+.seffaf {
+
+    background-image: url("../img/monalisa.jpeg");
+
+    border: 7px solid rgba(255, 192, 203, 0.4);
+    outline: 20px solid rgba(128, 0, 128, 0.4)
+}
+
+/*! border outline farkları */
+/* 1)border, border-radius özelliği ile yuvarlatılmış köşeleri destekler  outline yapmaz. */
+/* 2)border la istersek Yalnızca bir tarafı şekillendirme vardır, outline da yok */
+/* 3)outline,  -offset özelliğiyle offset'i (border ve outline arası boşluk) destekler  */
+/* 4)border, kutu modelinin bir parçasıdır, bu nedenle öğenin boyutuna göre sayılır, büyüdükçe komşusunu iter. outline, kutu modelinin bir parçası olmadığı için yakındaki öğeleri etkilemez, üstüne çıkar. öğenin border ının dışına çizilir ve diğer içerikle örtüşebilir.*/
+
+/*outline ın pratik kullanımı şeffaflıkla ilgilidir. Arka planı olan bir üst öğeniz (mesela body ye bir image verdiysek) varsa,ve bu resim border dan bile görünsün istiyorsak (border ının saydam olmasını istiyorsanız), "border" yerine "outline" kullanmalısınız. Bir border şeffaf olabilse de, ebeveynin değil çocuğun (seffaf taki monalisa yı) arka planını gösterir */
