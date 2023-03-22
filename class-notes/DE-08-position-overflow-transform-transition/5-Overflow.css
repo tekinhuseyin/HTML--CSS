@@ -1,0 +1,22 @@
+.box{
+    border: 2px solid red;
+    width: 20rem;
+    height: 6rem;
+    margin-bottom: 5rem;
+}
+
+.box1{
+    overflow: visible;
+}
+
+.box2{
+    overflow: hidden;
+}
+
+.box3 {
+    overflow: scroll;
+}
+
+.box4 {
+    overflow: auto;
+}

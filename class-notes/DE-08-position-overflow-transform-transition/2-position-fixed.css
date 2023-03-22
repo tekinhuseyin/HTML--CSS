@@ -1,0 +1,14 @@
+.fixed{
+    background-color: darkred;
+    padding: 20px;
+    position: fixed;
+    left: 50px;
+    /* top: 50px; */
+}
+
+.sticky{
+    background-color: darksalmon;
+    padding: 10px;
+    position: sticky;
+    top: 20px;
+}

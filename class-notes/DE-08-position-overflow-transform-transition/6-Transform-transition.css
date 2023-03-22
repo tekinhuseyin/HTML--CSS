@@ -1,0 +1,66 @@
+.yazi {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: 50vw;
+}
+
+.yazi1{
+    background-color: yellow ;
+    transform: rotateX(150deg);
+}
+
+.yazi2 {
+    background-color: violet;
+    transform: rotatey(60deg);
+}
+
+.yazi3 {
+    background-color: palevioletred;
+    transform: rotate(10deg);
+}
+.yazi4 {
+    background-color: cornflowerblue;
+}
+
+.yazi4:active{
+    transform: scale(2,0.5);
+
+}
+
+
+
+
+.box{
+    background-color: crimson;
+    width: 100px;
+    font-weight: 800;
+    height: 50px;
+}
+
+.x:hover{
+    transform: translateX(50px);
+}
+
+.y:active {
+    transform: translate(100px);
+}
+
+.xy:active{
+    transform: translate(150px, 150px);
+}
+
+
+
+
+/* .btn-div{
+    text-align: center;
+}
+
+.btn{
+    background-color:rgb(8, 129, 170);
+    border:2px solid gray;
+    padding:20px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+} */

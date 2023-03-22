@@ -1,0 +1,37 @@
+.box{
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid black;
+}
+
+/* z-index kullanmak icin mutlaka bir position ozelligi vermmemiz gerekir */
+/* default degeri 0 dir */
+
+.box1{
+    background-color: coral;
+    position: absolute;
+    left: 50px;
+    z-index: -1;
+}
+
+.box2 {
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    z-index:-2;
+}
+
+.box3 {
+    background-color: darkcyan;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 500;
+}
+
+.box4 {
+    background-color: darkseagreen;
+    position: absolute;
+    z-index: -4;
+}

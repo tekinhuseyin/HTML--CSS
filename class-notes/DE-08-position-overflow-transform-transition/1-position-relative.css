@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+    border: 2px solid red;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: crimson;
+    position: relative;
+    left: 70px;
+    top: 50px;
+}
+
+.box2 {
+    background-color: cadetblue;
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
