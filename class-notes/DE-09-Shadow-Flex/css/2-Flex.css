@@ -1,0 +1,159 @@
+.container1 {
+
+    background-color: antiquewhite;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    /* flex kullandığımızda elemanlar ekran küçüldükçe sıkışır, alta düşmez bu yüzden, wrap:browser küçüldükçe ekrana sığamayan elementler alt satıra geçsin.
+wrap-reverse sığmayan elementleri ters çevirir ve öyle alt satıra indirir */
+
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+/*! Yatay Hizalama: Justify-center
+  /**  /** flex-start: Nesneler kapsayıcının başından başlayarak dizilirler.*/
+/** space-evenly:neseneler arası, en baş ve son eşit boşluk */
+/**space-around: Nesneler arasında eşit boşluklar bırakılır, başa sona yarım boşluk.
+  /**space-between: İlk nesne başta, son nesne sonda olacak şekilde nesneler eşit olarak kapsayıcının içerisinde dizilirler.
+  /**center: Nesneler tam ortalı olacak şekilde hizalanır.
+  /**flex-end: Son nesne ve diğerleri en sağa yaslanacak şekilde hizalanır. */
+
+.container1 div {
+    background-color: tomato;
+    width: 5rem;
+    height: 5rem;
+    /* margin:0.5rem */
+    text-align: center;
+}
+
+
+.container2 {
+
+    background-color: pink;
+    /* dikeyde ortalamayı görebilmek için height verdik */
+    height: 20rem;
+    display: flex;
+    ;
+
+    justify-content: flex-end;
+
+
+    align-items: center;
+    ;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: baseline;
+    /* align-items: stretch; */
+    /* stretch kullanabilmek için child div lere height verilmemiş olmalı */
+
+    /*! Dikey Hizalama => align-items
+  /**flex-start: Nesneler, kapsayıcının en üstünden başlayarak dizilirler.
+/**flex-end: Nesneler, kapsayıcının en altından başlayarak, yukarı doğru dizilirler.
+/**center: Nesneler ortalı bir şekilde dikey olarak sıralanırlar.
+/**baseline: yazıların yerine bakılır, sıradanlığı bozan yazı tipi göz önüne alınarak hizalanmaya başlanılır.
+/**stretch: Tüm nesneler kapsayıcı yüksekliğine eşit olacak şekilde dizilirler. özel height ları yoksa çalışır*/
+
+
+}
+
+.container2 div {
+    background-color: cornflowerblue;
+
+    width: 5rem;
+
+    height: 10rem;
+}
+
+.container2 div:nth-child(1) {
+    height: 5rem;
+}
+
+.container2 div:nth-child(2) {
+    padding-top: 4rem;
+    ;
+}
+
+.container2 div:nth-child(3) {
+    height: 2rem;
+    padding: 5rem 0;
+    font-size: 5rem;
+}
+
+ul {
+    background-color: darkgray;
+    height: 30rem;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+
+    align-content: flex-start;
+    /*!Çok satırlı verilerin dikeyde hizalanması için kullanılır.
+ bütün elemanlar yukarı çıkıyorlar. 
+ align-items: flex-start sadece üstte kalan verileri üste yapıştırır*/
+
+    gap: 4rem 1rem;
+    /*?gap, flex içerisindeki elemanların dikey ve 
+yatay boşluklarını belirlemek için kullanılabilir.
+ ilk yazılan  (satırlar arası yukarı aşağı) boşluk, 2. yazılan ise  (sutunlar arası, sağ sol) boşluktur */
+
+}
+
+ul li {
+
+    background-color: violet;
+    width: 4rem;
+    height: 5rem;
+    /* margin:1rem; */
+
+}
+
+
+
+.container4 {
+    background-color: rgb(200, 55, 55);
+    padding: 1rem 0;
+    display: flex;
+}
+
+.container4 div {
+    background-color: yellow;
+    width: 5rem;
+    margin: 1rem;
+
+}
+
+.grow1 {
+    flex-grow: 1;
+
+    /*  default büyüme olsun x+x*/
+}
+
+.grow2 {
+    /*? grow2 classindakiler diğerlerine göre 2 kat daha fazla büyüyebilir. x+2x*/
+    flex-grow: 2;
+
+}
+
+.grow3 {
+    /*? grow3 classindakiler diğerlerine göre 3 kat daha fazla büyüyebilir. x+3x*/
+    flex-grow: 3;
+
+
+}
+
+.grow4 {
+    /*? nogrow classindakiler diğerlerine göre hiç büyümezler*/
+    flex-grow: 0;
+
+}

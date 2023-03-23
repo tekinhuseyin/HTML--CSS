@@ -1,0 +1,81 @@
+/*! kendi yazdığım css i çağırdım */
+
+@import "variable.css";
+
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-family: var(--ff-monteserrat);
+}
+
+nav {
+    margin-top: 0.5rem;
+    /* height:50px; */
+    display: flex;
+}
+
+nav .left,
+nav .middle,
+nav .right {
+    /* bütün child lar eşit büyüsün (padding ler hariç) o yüzden herbirine alttakini yazdım */
+    flex-grow: 1;
+    /*flex-grow:1=>başta cürmü kadar, sonra eşit büyüsünler ama sonuçta hepsi eşit olmamış oluyor. flex-basis:0=>eşit ölçülerde başlasın eşit büyüsün */
+    flex-basis: 0;
+    /* width:33%; */
+    /*!Tüm elemanların (gri açık mavi mavi alan) ekran büyüse de küçülse de eşit miktarda alan tutabilmesine izin ver.3 tane div browser da 3 parçada duracak, flex-basis:0; vermezsek ekran küçülünce ortadaki yazılar cürmü kadar yer alıyor alta inmiyor, eleman çoğaltsakta nav daki yer tamamen bitince iniyor, diğerlerinden daha çok yer kaplıyor. default olan=> flex-basis:auto= ekran küçülünce herkes ihtiyacı kadar yer kaplasın*/
+}
+
+nav .left {
+
+    background-color: var(--gri-8);
+    border: 1px solid black;
+    box-shadow: var(--acik-golge);
+}
+
+nav .middle {
+    background-color: var(--mavi-10);
+    box-shadow: var(--koyu-gölge);
+    border-radius: 10px;
+
+    text-align: center;
+
+}
+
+
+.middle a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    color: black;
+    /* background-color: red; */
+}
+
+.middle a:hover {
+    background-color: var(--mavi-6);
+    color: white;
+    border-radius: 10px;
+    /* transition:background-color 5s, color 1s; */
+}
+
+nav .right {
+    background-color: var(--mavi-7);
+    box-shadow: var(--acik-golge);
+    border: 1px solid black;
+    text-align: right;
+    font-size: 40px;
+
+}
+
+nav .right i {
+
+    color: black;
+}
+
+nav .right i:hover {
+    /** bu şekilde büyütürsem mavi div ten taşar, komşularına yaklaşır. */
+    /* transform:scale(2, 2); */
+    /** icon la beraber mavi div de büyüsün, komşularıyla da arası açılsın istersem alttakini tercih ederim */
+    font-size: 60px;
+}
