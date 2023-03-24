@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    /* grid-template-columns: 30% 50% 20%; */
+    grid-template-columns: 150px 300px 250px;
+    grid-template-rows: 150px 300px 100px;
+    
+}
+
+.parca{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: pink;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.parca1{
+    background-image: url(../../assets/img/logo_colorful.png);
+    background-size: cover;
+}
+
+.parca4{
+    overflow: auto;
+}
