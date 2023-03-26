@@ -1,108 +1,23 @@
-/* nav{
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 700px;
+    height: 2000px;
+    background-color: lightcyan;
+}
+.box{
     display: inline-block;
-} */
-
-body{
-    width: 1000px;
-    height: 5000px;
-    background-color: rgb(198, 198, 202) ;
-
 }
-
-
-tr{
-    background-color: rgb(65, 62, 62);
-    width: 1000px;
+h3{
     display: inline-block;
-    /* color: white; */
-
-
-    position: -webkit-sticky;
-        position: sticky;
-        top: 0;
+    background-color: gray;
+    width: 49%;
+    height: 25px;
 }
-
-.tr :hover{
-
-    color: white;
-}
-
-/* #right a {
-    text-align: left;
-}
-
-.leftt a {
-    text-align: right;
-} */
-
-
-
-
-
-
-nav .middle {
-    background-color: var(--mavi-10);
-    box-shadow: var(--koyu-gölge);
-    border-radius: 10px;
-
-    text-align: center;
-
-}
-
-
-.middle a {
-    text-decoration: none;
+.box2{
     display: inline-block;
-    padding: 15px;
-    color: black;
-    /* background-color: red; */
+    background-color: gray;
+    width: 49%;
+    height: 25px;
 }
-
-.middle a:hover {
-    background-color: var(--mavi-6);
-    color: white;
-    border-radius: 10px;
-    /* transition:background-color 5s, color 1s; */
-}
-
-
-
-/* 
-.navbar {
-    background-color: rgb(89, 92, 92);
-    height: 40px;
-    width: 500px; */
-
-}
-
-/* div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: yellow;
-    padding: 10px;
-    font-size: 20px;
-    width: 1000px;
-    color: white;
-} */
-
-
-
-
-
-
-
-/* .fixed {
-    background-color: darkred;
-    padding: 20px;
-    position: fixed;
-    left: 50px;
-    /* top: 50px; */
-} */
-
-/* .sticky {
-    background-color: darksalmon;
-    padding: 10px;
-    position: sticky;
-    top: 20px;
-} */
