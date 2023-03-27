@@ -1,0 +1,152 @@
+*{
+    /* background-color: blue; */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+body{
+    /* background-color: blue; */
+
+    /* body, tüm ekranın arka planını ele alır,  */
+    /* (*) bütün elementleri tek tek ayrı ayrı ele alır */
+}
+
+
+.header-left{
+    float:left;
+    padding: 1.4rem 1rem 0 1rem;
+
+    /* position: relative;
+    top: 1.4rem;
+    left: 1rem; */
+}
+
+
+
+.header-right{
+    float: right;
+    padding: 1.4rem 1rem 0 1rem;
+
+    /* position: absolute;
+        top: 0.7rem;
+        right: 1rem; */
+}
+
+ul li{
+    display: inline-block;
+
+/* li ler inline davranacaklari icin noktalari,
+display:inline-block yuzunden default olarak gitti     */
+
+    vertical-align: middle;
+}
+
+#header-kare{
+    opacity: 0,4;
+}
+#header-kare{
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+}
+
+a:hover{
+
+}
+
+
+main{
+    clear: both;
+    text-align: center;
+}
+
+.google-logo{
+    width: 272px;
+    height: 92px;
+    margin-top: 7rem;
+}
+
+.search-bar{
+    width: 500px;
+    border: 1px solid #d3d3d3;
+    border-radius: 25px;
+    margin: 2rem auto;
+}
+input{
+    width: 80%;
+    border: none;
+/* input un burder i gitsin */
+    
+    outline: none;
+    /* input a tiklayinca gelen border gitsin */
+
+}
+
+.büyütec, .mikrofon{
+    vertical-align: middle;
+}
+
+.main-button-div button{
+    /* inline elementlerden sadece button width height alir, padding-margin alir  */
+
+    margin: 11px 4px;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+p a{
+    color: blue;
+}
+a:hover{
+    text-decoration: underline 1px;
+}
+
+header button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    width: 4.5rem;
+    height: 2.5rem;
+    font-weight: 700;
+    border-radius: 2px;
+
+}
+
+
+footer{
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    /* satırlararası boşluk demek olduğu için, tek seferde bütün child larına alttan üstten padding vermiş gibi olur, bunu vermezsek her child a alttan üstten padding vermeliyiz */
+    line-height: 40px;
+}
+
+.footer-country{
+    padding-left: 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #dadce0;
+
+}
+
+.footer-bottom-left{
+    float: left;
+    padding-left: 20px;
+}
+
+.footer-bottom-right{
+    /* float: right; */
+    position: absolute;
+    right: 10px;
+}
+/* tek eleman sa ve inline sa text-align:center yada margin:auto, 2 elemansa position yada float, 3 ve daha fazlaysa dispaly:flex tercih edilebilir */
+
+
