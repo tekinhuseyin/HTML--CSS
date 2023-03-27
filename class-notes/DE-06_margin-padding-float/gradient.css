@@ -1,0 +1,51 @@
+p{
+    height: 10vh;
+}
+
+.header1{
+    background-image: linear-gradient(red, yellow);
+}
+
+.header2 {
+    background-image: linear-gradient(rgb(245, 50, 50),rgb(233, 223, 136));
+}
+
+.header3 {
+    background-image: linear-gradient(
+        to right,
+        rgb(245, 50, 50), 
+        rgb(231, 216, 81),
+        rgb(30, 156, 30));
+
+        /* to right soldan saga renk gecisi yapar */
+}
+
+.header4
+ {
+    background-image: linear-gradient(45deg,
+            red, yellow, green);
+
+/* lineer-gradient:yukaridan asagiya, radial-gradient :circle */
+
+}
+
+
+.header5 {
+    background-image: radial-gradient(rgb(115, 255, 0) 20%, rgb(255, 238, 2) 50%, rgb(255, 0, 0))
+}
+
+/* tekrarli gecis. Bunun icin ölcü vermemiz gerekir*/
+
+.header6 {
+    background-image: repeating-radial-gradient(rgb(217, 255, 3), rgb(255, 102, 0) 15%, rgb(0, 255, 21)20%)
+}
+
+/* linear-gradient= yukaridan asagiya
+radial-gradient=circle yuvarlak yapar.  */
+
+
+.header7 {
+    background-image: linear-gradient(to right, #7622da 11%, #47c6eb 11%, #47c6eb 29%, #ed5f1f 29%, #ed5f1f 60%, #f59f28 60%, #f59f28 75%, #6b1e5b 75%, 88%, #45b794 88%, #45b794 100%);
+}
+
+/* 0-11= #7622da. 11-29=#47c6eb. 29-60=#ed5f1f. 60-75=#f59f28. 75-88=#6b1e5b. 88-100=#45b794 */
