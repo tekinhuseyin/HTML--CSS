@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+header {
+  background-color: #30a7c3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+header img {
+  width: 100px;
+  border: 2px solid hotpink;
+  border-radius: 10px;
+  padding: 1rem;
+}
+header ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+header ul li:hover {
+  background-color: pink;
+  border-radius: 10px;
+}
+header ul li:hover a {
+  color: #30a7c3;
+}
+
+.banner {
+  background-color: hotpink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.banner aside button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  background-color: rgb(224, 169, 169);
+  border: none;
+  border-radius: 5px;
+}
+.banner aside button:hover {
+  background-color: pink;
+}
+.banner img {
+  width: 30%;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+/********************************************/
+.cards {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+.cards .card1 {
+  background-color: green;
+  color: yellow;
+  width: 25%;
+  height: 12rem;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.cards .card2 {
+  background-color: blue;
+  color: yellow;
+  width: 25%;
+  height: 12rem;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.cards .card3 {
+  background-color: yellow;
+  color: yellow;
+  width: 25%;
+  height: 12rem;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.cards .card4 {
+  background-color: magenta;
+  color: yellow;
+  width: 25%;
+  height: 12rem;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+/********************   ARTICLES   ***********************//*# sourceMappingURL=style.css.map */
